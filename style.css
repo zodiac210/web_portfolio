@@ -275,6 +275,25 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+.profile-image {
+  margin-left: 2.4rem;
+}
+
+  .contact-list {
+    /* grid-template-columns: 1fr; */
+    gap: .5rem;
+  }
+
+  .contact-item span {
+    display: none;
+  }
+
+  .contact-item i {
+    margin-left: 18px;
+  }
+}
+
 /* footer {
   text-align: center;
   padding: 1rem;
