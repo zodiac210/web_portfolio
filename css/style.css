@@ -30,9 +30,12 @@ body {
   color: var(--text-color);
   height: 100%;
   overflow-y: scroll;
-  /* masih bisa scroll */
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 html::-webkit-scrollbar,
@@ -45,7 +48,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--bg-color);
+  background: var(--bg-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
   display: flex;
   justify-content: space-between;
@@ -142,8 +145,11 @@ body::-webkit-scrollbar {
 
 .skills {
   padding: 3rem 1rem;
-  background-color: var(--soft-gray);
   text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: .5rem;
 }
 
 .skill-grid {
@@ -151,7 +157,7 @@ body::-webkit-scrollbar {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   max-width: 800px;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
 }
 
 .skill-card {
@@ -188,8 +194,8 @@ body::-webkit-scrollbar {
 }
 
 .projects h2 {
-  margin-bottom: 1rem;
-} 
+  margin-bottom: .5rem;
+}
 
 .project-list {
   display: grid;
@@ -229,7 +235,7 @@ body::-webkit-scrollbar {
 
 .contact h2 {
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   color: var(--text-color);
 }
 
@@ -303,7 +309,9 @@ body::-webkit-scrollbar {
   }
 }
 
-/* footer {
+footer {
+  font-size: .8rem;
+  font-weight: 400;
   text-align: center;
-  padding: 1rem;
-} */
+  padding: .8rem;
+}

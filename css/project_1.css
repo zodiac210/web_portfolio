@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #FAF3E0;
+  --secondary-color: #FFD54F;
+  --bg-color: #ffffff;
+  --soft-gray: #f5f5f5;
+  --border-color: #e0e0e0;
+  --text-color: #222222;
+  --accent-color: #888888;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+html,
+body {
+  font-family: poppins, sans-serif;
+  background: var(--bg-color);
+  height: 1080px;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  content: '';
+}
+
+.navbar {
+  position: fixed;
+  background: var(--bg-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: .5rem 1rem;
+  font-weight: 600;
+}
+
+.navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.2s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.search-box {
+  position: relative;
+  margin-left: 15rem;
+}
+
+.navbar .navbar-center .search-box input {
+  padding: 8px 35px 8px 12px;
+  /* padding kanan lebih besar biar ada ruang buat icon */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.navbar .navbar-center .search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  cursor: pointer;
+}
+
+.banner img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin-top: 4.5rem;
+}
+
+/* hero */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  color: black;
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.hero button:hover {
+  background: var(--secondary-color);
+}
+
+.products {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.products h3 {
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.products .product-grid .product a button {
+  border: none;
+  padding: 8px 12px;
+  background: var(--secondary-color);
+  border-radius: 20px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
